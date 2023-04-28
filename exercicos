@@ -181,3 +181,70 @@ while n != 0:
         branco = branco + 1
         
 print('Números de votos \nCandidato 1',c1,'\nCandidato 2',c2,'\nCandidato 3',c3,'\nCandidato 4',c4,'Branco',branco,'Nulo',nuul)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+teste 1
+
+lista = ['jose o chato', 'maria a doida','joao o caolho','roberto beto','gustavo tavio']
+for i in range (0,5):
+    print (lista[i])
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+teste 2
+
+lista = ['jose o chato', 'maria a doida','joao o caolho','roberto beto','gustavo tavio']
+for i in range (0,5):
+    print ('ola amigos',lista[i],'tudo certo?')
+-----------------------------------------------------------------------------------------------------------------------------------------
+teste 3 
+
+x = input ('digite um nome :')
+nomes = ['yuri','joao','maria']
+nomes.append(x)
+print (nomes)
+-----------------------------------------------------------------------------------------------------------------------------------------
+teste 4
+
+x = input ('digite o primeiro nome')              
+y = input ('digite o segundo nome')               
+z = input ('digite o terceiro nome') 
+a = input ('digite o quarto nome')  
+nomes = [x , y , z , a]                       
+nomes.sort()                                     
+print (nomes)                                    
+-----------------------------------------------------------------------------------------------------------------------------------------  
+teste 4 (modo diferente)  
+						
+valores = list()						  
+ for i in range(0,5):
+ num = int(input('digite um numero/letra'))
+valores.append(num)
+print (valores)
+valores.sort(reverse = False)
+ print (valores)
+ valores.sort(reverse = True)
+ print  (valores)
+-----------------------------------------------------------------------------------------------------------------------------------------
+teste 5 
+
+notas = list()
+soma = media = 0 
+
+for i in range (0,3):
+    al1 = float(input('digite a nota de cada aluno :'))
+    notas.append(al1)
+    soma = soma + notas[i]
+    
+media = soma/3
+notas.sort(reverse=False)
+menor = min(notas)
+maior = max(notas)
+print ('menor nota :',menor)
+print ('maior nota :',maior)
+print ('media %0.2f'%media)
+print (notas)
+-----------------------------------------------------------------------------------------------------------------------------------------
+teste 6 
+
