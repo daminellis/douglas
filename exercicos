@@ -248,3 +248,9 @@ print (notas)
 -----------------------------------------------------------------------------------------------------------------------------------------
 teste 6 
 
+numeros = list
+for i in range (10):
+    numeros = int(input('digite dez numeros inteiros :'))
+
+numeros.append(reversed)
+print (numeros)
