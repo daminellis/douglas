@@ -246,11 +246,196 @@ print ('maior nota :',maior)
 print ('media %0.2f'%media)
 print (notas)
 -----------------------------------------------------------------------------------------------------------------------------------------
-teste 6 
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+exercicio dia 27/04
+exercico 1
 
 numeros = list
-for i in range (10):
-    numeros = int(input('digite dez numeros inteiros :'))
+num = 0
 
-numeros.append(reversed)
+for i in range (10):
+    num = int(input('digite dez numeros inteiros :'))
+    numeros.append(num)
+
+numeros.reverse()
 print (numeros)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+exercicio dia 27/04
+exercicio 2
+
+notas = list
+soma = media = alunos = 0 
+
+for x in range (10):
+    for i in range (1,5):
+        num = float(input('digite a sua nota'))
+        soma = soma + 1
+        media = soma / i
+    soma = 0 
+    notas.append(media)
+    if media>=7:
+        alunos = alunos + 1
+
+print (notas)
+print ('o numero de alunos com media maior ou igual a 7 é de :',alunos)
+-----------------------------------------------------------------------------------------------------------------------------------------
+exercicio dia 27/04
+exercicio 3
+
+lista1 = list()
+lista2 = list()
+lista3 = list()
+a = b = 0 
+
+for i in range(0,5):
+    elem = input('digite o elemento : ')
+    lista1.append(elem)
+    
+for i in range():
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+exercicios dia 04/05
+
+EXEMPLO MAQUINA DE TROCA (TUPLA)
+
+valor = int(input('entre com o valor do saque :'))
+notas = (100, 50, 20, 10, 5)
+i = 0
+
+while i > len(notas):
+    quantidade = int ( valor / notas [i] )
+    valor = valor % notas[i] 
+    if quantidade != 0 :
+        print ( i + 1, 'emtregar' , quantidade , 'notas de ', notas[i])
+    i = i + 1
+-----------------------------------------------------------------------------------------------------------------------------------------
+EXEMPLO TUPLA
+
+tupla = (1000, 2000, 5, 15000, 12, 1, 0.5, -2, 1000)
+soma = 0
+for i in tupla:
+    if i < 100:
+        soma += i 
+print ('a soma é :',soma)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+EXERCICIO 1
+
+numeros = list()
+pares = list()
+
+
+quantidade = int(input('Digite quantos números quer textar: '))
+
+for i in range(0,quantidade):
+    numeros.append(int(input('Digite o número')))
+for i in range(0,quantidade):
+    if numeros[i]%2 == 0:
+        pares.append(numeros[i])
+        
+print('Tamanho da lista L:',quantidade)
+print('L:',numeros)
+print('Resposta:',pares)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+EXERCICIO 2
+
+n = int(input("Quantos alunos da sala um :"))
+for i in range(n):
+    tur1.append(float(input("Digite o valor {}: ".format(i+1))))
+
+n = int(input("Quantos valores deseja adicionar na lista p2? "))
+for i in range(n):
+    tur2.append(float(input("Digite o valor {}: ".format(i+1))))
+
+media_pr1 = sum(tur1) / len(tur1)
+media_pr2 = sum(tur2) / len(tur2)
+
+print (tur1)
+print ('----------------------------')
+print (tur2)
+if media_pr1 > media_pr2:
+    print("A média da lista p1 é maior com : {:.2f}".format(media_pr1))
+elif media_pr2 > media_pr1:
+    print("A média da lista p2 é maior com : {:.2f}".format(media_pr2))
+else:
+    print("As médias são iguais : {:.2f}".format(media_pr1))
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+PRIMEIRO CONTATO COM DICIONARIOS
+
+teste um 
+
+d = {'arroz': 17.30, 'feijao': 12.50, 'carne': 23.90, 'alface': 3.40}
+
+print (d)
+print (d.get('carne'))
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+teste dois
+
+d = {'arroz': 17.30, 'feijao': 12.50, 'carne': 23.90, 'alface': 3.40}
+
+print (d)
+d.update({'carne': 39.90, 'abacate': 4.60})
+print (d)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+teste tres  
+
+d = {'arroz': 17.30, 'feijao': 12.50, 'carne': 23.90, 'alface': 3.40}
+
+print (d)
+print (len(d))
+
+d.update({'carne': 39.90, 'abacate': 4.60})
+print (d)
+print (len(d))
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+teste quatro 
+
+dic = {'arroz': 17.30, 'feijao': 12.50, 'carne': 23.90, 'alface': 3.40}
+
+print (dic)
+for alimento, preco in dic.items():
+    print(f'{alimento} = {preco:./2}')
+-----------------------------------------------------------------------------------------------------------------------------------------
+CASO VA FAZER UMA COPIA : 
+
+COPIA.DICT()
+-----------------------------------------------------------------------------------------------------------------------------------------
+exercicio 1
+
+produtos = {}
+
+while True:
+    cod = int(input('Código :'))
+    nme = input('nome :')
+    prco = float(input('digite o preço do prod. :'))
+    qtde = int(input('digite quantos deste item são :'))
+    
+    prd = []
+    prd.append(nme)    
+    prd.append(prco)
+    prd.append(qtde)
+    produtos.update({cod : prd})
+    
+    resp = input('deseja continuar ?(sim : s) (nao : n) : ')
+    
+    if resp == ('n'):
+        break
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
