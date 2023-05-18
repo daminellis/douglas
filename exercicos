@@ -435,7 +435,111 @@ while True:
     if resp == ('n'):
         break
 -----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+prova pyton 
+ex1
+
+#Crie um programa em linguagem Python que solicite ao usuário para
+#digitar uma sequência de números inteiros positivos. O programa deve, em seguida,
+#calcular e imprimir a soma de todos os números ímpares na sequência. Utilize lista na resolução do problema 
+numeros = list()
+impares = list()
+soma = 0
+#solicitar ao usuario quantas vezes ira repetir o precesso
+quantidade = int(input('Digite quantos números você quer enviar :'))
+
+for i in range(0,quantidade):
+    numeros.append(int(input('Digite o número :')))
+#programa executando a conta para verificar os numeros impares
+for i in range(0,quantidade):
+    if numeros[i]%2 != 0:
+        impares.append(numeros[i])
+soma = sum(impares)
+
+#mostrando os valores ao usuario
+print('Tamanho da lista feita:',quantidade)
+print('Lista completa:',numeros)
+print('Números impares:',impares)
+print('Soma dos numeros ímpares :',soma)
+-----------------------------------------------------------------------------------------------------------------------------------------
+ex2
+
+#Elabore um programa que solicite ao usuário uma palavra ou frase e
+#conte o número de vogais presentes nela. O programa deve exibir o número total de
+#vogais e, em seguida, uma lista contendo todas as vogais encontradas, bem como o
+#número de vezes que cada uma aparece na palavra ou frase.
+ 
+#solicita ao usuário uma palavra ou frase
+entrada = input("Digite uma palavra ou frase: ")
+
+#define uma lista de vogais
+vogais = ['a', 'e', 'i', 'o', 'u','A', 'E', 'I', 'O', 'U']
+
+#inicia um dicionário para armazenar o número de ocorrências de cada vogal
+contador = {vogal: 0 for vogal in vogais}
+
+#contador de vogais
+totalvog = 0
+for caractere in entrada:
+    if caractere in vogais:
+        contador[caractere] += 1
+        totalvog += 1
+
+#mostra ao usuario as vogais
+print("Número total de vogais :", totalvog)
+
+#lista de vogais
+print("Vogais encontradas :")
+for vogal, quantidade in contador.items():
+    if quantidade > 0:
+        print(f"{vogal}: {quantidade}")
 
 -----------------------------------------------------------------------------------------------------------------------------------------
+ex3
+
+#Desenvolva um programa em linguagem Python para cadastrar matrícula,
+#nome e salário dos funcionários de uma empresa. Ao fim, o programa deve mostrar
+#todos os funcionários cadastrados e, em seguida, aumentar para R$ 1.800,00 o salário
+#dos funcionários com salários inferiores a R$ 1.500,00. Depois do aumento salarial, o
+#programa deve exibir a nova listagem.
+
+#lista
+funcionarios = []
+
+#cadastro
+def cadastrarfunc():
+    matricula = input("Digite sua matrícula :")
+    nome = input("Digite seu nome :")
+    salario = float(input("Digite o salário :"))
+    funcionario = {"Matrícula": matricula, "Nome": nome, "Salário": salario}
+    funcionarios.append(funcionario)
+
+#lista de funcionarios
+def exibirfunc():
+    print("\nFuncionários cadastrados:")
+    for funcionario in funcionarios:
+        print(f"Matrícula: {funcionario['Matrícula']}, Nome: {funcionario['Nome']}, Salário: R$ {funcionario['Salário']:.2f}")
+
+#aumentar os salarios
+def aumentarsal():
+    for funcionario in funcionarios:
+        if funcionario["Salário"] < 1500:
+            funcionario["Salário"] = 1800
+
+#cadastro de funcionários
+quantidade = int(input("Digite a quantidade de funcionários que deseja cadastrar: "))
+for i in range(quantidade):
+    cadastrarfunc()
+    
+#lista pre aumento
+exibirfunc()
+#lista do aumento
+aumentarsal()
+#lista pos aumento
+print("\nNova lista de funcionários após o aumento salarial:")
+exibirfunc()
 -----------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+
