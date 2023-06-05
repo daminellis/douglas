@@ -538,8 +538,75 @@ aumentarsal()
 #lista pos aumento
 print("\nNova lista de funcionários após o aumento salarial:")
 exibirfunc()
------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------exercicio 1 prova presencial
+temperaturas = []  # Lista vazia para armazenar as temperaturas
+
+while True:
+    temperatura = input("Informe uma temperatura (ou 'sair' para encerrar): ")
+    
+    if temperatura.lower() == "sair":
+        break  # Encerra o loop se a palavra "sair" for digitada
+    
+    try:
+        temperatura = float(temperatura)  # Converte o valor para float
+        temperaturas.append(temperatura)  # Adiciona a temperatura à lista
+    except ValueError:
+        print("Temperatura inválida. Por favor, informe um número válido.")
+
+if len(temperaturas) > 0:
+    menor_temperatura = min(temperaturas)
+    maior_temperatura = max(temperaturas)
+    media_temperaturas = sum(temperaturas) / len(temperaturas)
+    
+    print(f"\nMenor temperatura: {menor_temperatura}")
+    print(f"Maior temperatura: {maior_temperatura}")
+    print(f"Média das temperaturas: {media_temperaturas:.2f}")
+else:
+    print("Nenhuma temperatura foi informada.")
+----------------------------------------------------------------------------------------------------------------------------------------- exercicio 2  
+pescadores = {}
+
+while True:
+    nome = input("Digite o nome do pescador (ou 'sair' para encerrar): ")
+    
+    if nome == 'sair':
+        break
+    
+    peso = float(input("Digite o peso de peixes trazido pelo pescador em quilos: "))
+    
+    if peso > 50:
+        excesso = peso - 50
+        multa = excesso * 4.00
+        pescadores[nome] = multa
+
+print("\nRelatório de Multas:")
+for nome, multa in pescadores.items():
+    print(f"Nome do pescador: {nome}")
+    print(f"Valor da multa: R$ {multa:.2f}\n")
+-----------------------------------------------------------------------------------------------------------------------------------------exercicio 3
+while True:
+    nome_atleta = input("Nome do atleta: ")
+    if nome_atleta == "":
+        break
+    
+    saltos = []
+    for i in range(5):
+        salto = float(input(f"{i+1}º Salto: "))
+        saltos.append(salto)
+    
+    melhor_salto = max(saltos)
+    pior_salto = min(saltos)
+    saltos.remove(melhor_salto)
+    saltos.remove(pior_salto)
+    media_saltos = sum(saltos) / len(saltos)
+    
+    print("\nResultado final:")
+    print(f"Atleta: {nome_atleta}")
+    for i, salto in enumerate(saltos):
+        print(f"Salto {i+1}: {salto} m")
+    print(f"Melhor salto: {melhor_salto} m")
+    print(f"Pior salto: {pior_salto} m")
+    print(f"Média dos demais saltos: {media_saltos} m")
+    print(f"Resultado final:\n{nome_atleta}: {media_saltos} m\n")
+-----------------------------------------------------------------------------------------------------------------------------------------exercicio 4
 
